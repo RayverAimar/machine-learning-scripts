@@ -27,6 +27,7 @@ X_test = sc_X.transform(X_test)
 from sklearn.svm import SVC
 classifier= SVC(kernel="rbf", random_state=0)
 classifier.fit(X_train, y_train)
+
 # Prediction of the resuls with the 
 y_pred = classifier.predict(X_test)
 
@@ -49,7 +50,7 @@ for i, j in enumerate(np.unique(y_set)):
                 c = ListedColormap(('red', 'green'))(i), label = j)
 plt.title('Classifier (Training Dataset)')
 plt.xlabel('Age')
-plt.ylabel('Stimated Salary')
+plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 
@@ -66,7 +67,7 @@ for i, j in enumerate(np.unique(y_set)):
                 c = ListedColormap(('red', 'green'))(i), label = j)
 plt.title('Classifier (Testing Dataset)')
 plt.xlabel('Age')
-plt.ylabel('Stimated Salary')
+plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 
