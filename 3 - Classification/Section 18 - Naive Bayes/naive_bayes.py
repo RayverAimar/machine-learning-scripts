@@ -5,12 +5,6 @@ Created on Sat Mar 11 23:48:37 2023
 @author: Rayver
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 11 18:20:05 2023
-
-@author: Rayver
-"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
